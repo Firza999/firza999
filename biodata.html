@@ -2,140 +2,33 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="style.css">
-    <title>Biodata Saya - Tema Perdesaan</title>
-    <style>
-        /* --- CSS TEMA PERDESAAN --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Georgia', serif; /* Font klasik & elegan */
-        }
-
-        body {
-            background-color: #fcfaf1; /* Krem hangat seperti kertas tua */
-            color: #2d3436;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        /* Kartu Biodata Utama */
-        .biodata-card {
-            background: white;
-            max-width: 800px;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-            border: 1px solid #e0d8c3;
-        }
-
-        /* Bagian Foto */
-        .profile-side {
-            flex: 0 0 250px;
-            margin-right: 40px;
-            text-align: center;
-        }
-
-        .profile-pic {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%; /* Foto Bulat */
-            object-fit: cover;
-            border: 8px solid #fcfaf1;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-
-        /* Bagian Teks */
-        .info-side {
-            flex: 1;
-        }
-
-        h1 {
-            color: #2d5a27; /* Hijau Daun */
-            margin-bottom: 20px;
-            font-size: 2rem;
-            border-bottom: 2px solid #d4a373; /* Garis warna kayu */
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .info-item {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-            border-bottom: 1px solid #f0f0f0;
-            padding-bottom: 8px;
-        }
-
-        .info-item strong {
-            color: #3e4a3d;
-            display: inline-block;
-            width: 100px;
-        }
-
-        .quote {
-            margin-top: 25px;
-            font-style: italic;
-            color: #7f8c8d;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        /* Responsif untuk Handphone */
-        @media (max-width: 650px) {
-            .biodata-card {
-                flex-direction: column;
-                text-align: center;
-                padding: 30px 20px;
-            }
-            .profile-side {
-                margin-right: 0;
-                margin-bottom: 30px;
-            }
-            .info-item strong {
-                display: block;
-                width: 100%;
-                margin-bottom: 5px;
-            }
-        }
-    </style>
+    <title>Biodata - Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="biodata-card">
-        <div class="profile-side">
-            <img src="https://via.placeholder.com/300" alt="Foto Ira" class="profile-pic">
-        </div>
-
-        <div class="info-side">
-            <h1>Profil Biodata</h1>
-            
-            <div class="info-item">
-                <strong>Nama</strong> Muhammad Firza Arif Rahman
-            </div>
-            <div class="info-item">
-                <strong>Status</strong> Mahasiswa
-            </div>
-            <div class="info-item">
-                <strong>Hobi</strong> Olahraga
-            </div>
-            <div class="info-item">
-                <strong>Alamat</strong> Desa sungai lurus
-            </div>
-
-            <p class="quote">
-                "Hidup yang tidak di pertaruhkan tidak layak untuk di menangkan."
-            </p>
-        </div>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html" class="active">Biodata</a>
+        <a href="galeri-foto.html">Foto</a>
+        <a href="galeri-video.html">Video</a>
+    </nav>
+    <div class="container">
+        <h2>Profil Lengkap</h2>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid #ddd; height: 40px;">
+                <td><strong>Nama Lengkap</strong></td>
+                <td>Ira</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #ddd; height: 40px;">
+                <td><strong>Pekerjaan</strong></td>
+                <td>Mahasiswa & Pegiat Lingkungan</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #ddd; height: 40px;">
+                <td><strong>Hobi</strong></td>
+                <td>Fotografi Alam & Desain Web</td>
+            </tr>
+        </table>
     </div>
-
+    <footer>&copy; 2026 - Koleksi Alam Ira</footer>
 </body>
 </html>
